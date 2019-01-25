@@ -1,0 +1,17 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'Rakefile'
+    - 'spec/spec_helper.rb'
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false

@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md">
+    <p>These are all the issues you have created across all repositories you have access to.</p>
+    <table class="table table-striped">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Title</th>
+          <th scope="col">Description</th>
+          <th scope="col">Repository</th>
+          <th scope="col">Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% issues_list.each do |issue| %>
+          <tr>
+            <td scope="row"><%= issue[:title] %></td>
+            <td><%= issue[:body] %></td>
+            <td><%= issue[:repo_name] %></td>
+            <td><a href="<%= issue[:url] %>" target="_blank">Link</a></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

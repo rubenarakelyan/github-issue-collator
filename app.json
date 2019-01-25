@@ -1,0 +1,21 @@
+{
+  "name": "GitHub Issue Collator",
+  "description": "Collates issues from all your GitHub repos into one place",
+  "repository": "https://github.com/rubenarakelyan/github-issue-collator",
+  "env": {
+    "GITHUB_ACCESS_TOKEN": {
+      "required": true
+    },
+    "AUTH_USERNAME": {
+      "required": true
+    },
+    "AUTH_PASSWORD": {
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
